@@ -1,0 +1,27 @@
+
+nav::after{
+  left:-62.6%;
+  visibility: visible;
+}
+
+.bgimg,#bgimg{
+	background-color: white;
+	opacity: 0.5;
+	filter: blur(8px);
+}
+
+.content{
+	position: relative;
+	top:630px;
+	width: 80%;
+	margin: auto auto 50px auto;
+	font-size: 20px;
+	font-weight:bold;
+}
+
+
+
+#wrapper{
+	min-height:90% ;
+	font-weight:bold;
+}

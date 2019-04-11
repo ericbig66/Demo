@@ -1,0 +1,45 @@
+
+footer{
+	columns: 3 auto;
+	position: relative;
+	height: 150px;
+	width:100%;
+	background-color: rgba(0,0,0,0.5);
+	color:white;
+	overflow: hidden;
+	bottom:0px;
+}
+
+/*testing*/
+#wrapper{
+	min-height: 10%;
+	max-height: 66%;
+}
+
+
+footer a{
+	color:white;
+	-webkit-column-break-after:always;
+}
+
+footer div{
+	padding:20px;
+	-webkit-column-break-before:always;
+	right:;
+	overflow: hidden;
+}
+
+#btt{
+	border-radius: 50%;
+	cursor: pointer;
+	line-height: 0.8;
+	height: 35px;
+	width:40px;
+	padding: 2px;
+	position: fixed;
+	left:99.5%;
+	top:99.5%;
+	transform: translate(-100%,-100%);
+	z-index: 2;
+}
+

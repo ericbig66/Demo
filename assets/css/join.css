@@ -1,0 +1,39 @@
+nav::after{
+  left:-37.7%;
+  visibility: visible;
+}
+
+h2.one { background: -webkit-linear-gradient(45deg, rgba(30,55,154,1) 0%,rgba(90,119,202,1) 62%,rgba(96,125,207,0.7) 68%,rgba(126,158,232,0) 100%); 
+          color: white; 
+      	}
+
+h2.two { background: -webkit-linear-gradient(45deg, rgba(30,82,154,1) 0%,rgba(90,143,202,1) 62%,rgba(96,149,207,0.7) 68%,rgba(126,181,232,0) 100%); 
+          color: white; 
+     	 }
+
+h2.three{ background: -webkit-linear-gradient(45deg, rgba(30,106,154,1) 0%,rgba(90,166,202,1) 62%,rgba(96,172,207,0.7) 68%,rgba(126,202,232,0) 100%);
+          color: white; 
+     	 }
+
+div.double {border-style: double; border-width: 5px; background: #f2f2f2; border-radius: 40px ; padding: 15px;}
+
+.bgimg,#bgimg{
+  background-color: white;
+  opacity: 0.5;
+  filter: blur(8px);
+}
+
+/*文字至中取代方案*/
+#title{
+	margin:10px 44.4% 0px;
+	text-align: left;
+  font-size: 32px;
+  color: #591a99;
+  text-shadow: 5px 5px  #e2ff99;
+}
+
+/*留白調整*/
+div.double{
+	width: 90%;
+	margin:auto;
+}
