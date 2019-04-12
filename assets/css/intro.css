@@ -8,13 +8,14 @@ nav::after{
 }
 
 .insidetitle{
+	display: flex;
+	justify-content: center;
 	width:100%;
 	position:relative;
 	overflow: hidden;
-	margin: auto auto 15px auto;
+	margin: auto auto 0 auto;
 	text-align: center;
 	height: 215px;
-	/*outline: solid green 1px;*/
 }
 
 .portrait{
@@ -30,7 +31,6 @@ nav::after{
 	cursor: pointer;
 	transition-timing-function: ease;
 	transition: 0.5s;
-	/*outline: solid green 1px;*/
 }
 
 /*the text of the tooltip*/
@@ -41,14 +41,13 @@ nav::after{
 	background-color: black;
 	border-radius: 5px;
 	position: absolute;
-	top:75%;
-	margin-left: -4.3%;
+	top:183px;
+	margin-left: -65px;
 	color:white;
 	padding:5px;
 	text-align: center;
 	display: inline-block;
 	transition: opacity 0.5s;
-	/*outline: solid green 1px;*/
 }
 
 /*the arrow above the tooltip */
@@ -77,27 +76,37 @@ nav::after{
 
 /*introduction section*/
 .people{
-	width: 80%;
-	margin:auto; 
-	padding:40px;
-	background-color:rgba(0,0,0,0.5); 
-	border-radius: 20px;
-	/*outline: green solid 1px;*/
+	display: flex;
+	justify-content: center;
+	width:80%;
+	padding:0;
+	margin:auto;
+	color:white;
 }
 
 /*self introduction of all person*/
-.people p{
-	font-size: 18pt;
+.pictxt div{
+	display: flex;
+	font-size: 23px;
 	color:white;
 	width: 40%;
-	display: inline-block;
 	text-align: justify;
-	margin: auto;
-	position: relative;
+	justify-content: center;
+	vertical-align: middle;
+	flex-direction: column;
+	letter-spacing: 5px;
+}
+
+.pictxt{
+	
+	background-color:rgba(0,0,0,0.5);
+	margin: 1% auto 5% auto;
+	border-radius: 20px;
+	display: flex;
+	padding: 5%;
 }
 
 /*photo of each person*/
-
 #m0{
 	background-image: url(../img/Eric.jpg);
 }

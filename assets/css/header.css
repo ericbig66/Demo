@@ -1,9 +1,6 @@
 
 /*背景圖設定*/
 .bgimg,#bgimg{
-	/*background-color: white;*/
-	/*opacity: 0.5;*/
-	/*filter: blur(8px);*/
 	background-image: url(../img/bg.jpg);
 	background-size: cover;
 	background-position: center;
@@ -18,17 +15,6 @@
 	overflow: hidden;
 }
 
-#logo{
-	width:55px;
-	position: absolute;
-	left:400px;
-	margin-top:-2px; 	
-}
-
-header{
-	z-index: -4px;
-}
-
 /*body區域設定*/
 body,html{
 	height:100%;
@@ -37,17 +23,29 @@ body,html{
 	padding: 0;
 }
 
-/*1號標題設定*/
+/*header settings*/
+header{
+	z-index: 4;
+}
+
+/*------topic section------*/
+/*topic section container*/
+.htitle{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	background-color:#f4f4f4;
+	width: 100%;
+}
+
+/*1號標題通用設定*/
 h1{
 	padding: 30px 0px;
 	margin:0;
-	text-align: center;
+	min-width: 1em;
+	/*text-align: center;*/
 	letter-spacing: 10px;
 	color:black;
-}
-
-header h1{
-	background-color:#f4f4f4;
 }
 
 /*字元強調設定*/
@@ -56,8 +54,22 @@ em{
 	font-style: normal;
 }
 
+/*brand logo*/
+#logo{
+	width:55px;
+	vertical-align: middle;
+	margin-top:-0.5%;
+	margin-right: -5%;	
+}
+
+/*------nav bar section------*/
+
 /*導航列*/
 nav{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 	background-color: #333;
 	border-bottom: #0392cf 10px solid;
 	width: 100%;
@@ -65,64 +77,94 @@ nav{
 	z-index: 10;
 }
 
+/*偽元素:導航列下的藍色引導條*/
 nav::after{
 	content: "";
 	border-style: solid;
 	border-color: transparent transparent #0392cf transparent; 
 	border-width: 10px;
 	position: relative;
-	top:54%;
+	top:35%;
 	visibility: hidden;
 }
 
-nav>ul{
-	margin: 1.5% 33% 2% 29.5%;
+
+/*選單*/
+.container{
+	display: flex;
 	float:left;
+	padding:0;
+	width:100%;
 }
 
-nav>ul>li{
+
+.navcon{
+	flex-wrap:nowrap;
+	text-align: center;
+	width:500px;
+	
+}
+
+
+
+
+.navcon>ul{
+	display: flex;
+}
+
+/*選項*/
+.navcon>ul>li{
 	list-style: none;
 	letter-spacing: 4px;
-	/*position: relative;*/
-	float: left;
+	justify-content: center;
 	position: relative;
 }
 
-nav>ul>li>a{
+/*選項的超連結*/
+.navcon>ul>li>a{
 	text-decoration: none;
 	color: white;
 	display: block;
-	padding: 0px 20px 10px 20px;
+	vertical-align: middle;
+	padding:10px 20px;
+	flex:1;
+
 }
 
-
-nav>ul>li>ul{
-	position: relative;
+/*下拉方塊*/
+.navcon>ul>li>ul{
+	position:absolute;
 	float: left;
 	display: none;
 	background-color: #333;
 	position: absolute;
-	padding: 0.1px;
+	padding-left:0;
+
 }
 
-nav>ul>li:hover ul{
+/*選單展開特效*/
+.navcon>ul>li:hover ul{
 	z-index: 10;
 	display: block;
 }
 
-nav>ul>li>ul>li{
+/*選單內選項設定*/
+.navcon>ul>li>ul>li{
 	list-style: none;
 	width: 160px;
+	text-align: left;
 }
 
-nav>ul>li>ul>li>a{
+/*選單內選項超連結設定*/
+.navcon>ul>li>ul>li>a{
 	text-decoration: none;
 	color: white;
 	display: block;
-	padding: 10px 19px;
+	padding: 10px 20px;
 	
 }
 
-nav>ul>li>ul>li>a:hover{
+/*選單內選項超連結標示*/
+.navcon>ul>li>ul>li>a:hover{
 	background-color: #444;
 }

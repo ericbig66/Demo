@@ -7,10 +7,11 @@ footer{
 	background-color: rgba(0,0,0,0.5);
 	color:white;
 	overflow: hidden;
+	margin-top:2.5%;
 	bottom:0px;
 }
 
-/*testing*/
+/*footer position setting*/
 #wrapper{
 	min-height: 10%;
 	max-height: 66%;
@@ -41,5 +42,13 @@ footer div{
 	top:99.5%;
 	transform: translate(-100%,-100%);
 	z-index: 2;
+	background-color: black;
+	opacity: 0.2;
+	border:none;
+	color:white;
+}
+
+#btt:hover{
+	opacity: 1;
 }
 

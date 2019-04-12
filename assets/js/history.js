@@ -15,8 +15,8 @@ member(parseInt(number));
 function member(m){
 	document.getElementById("p"+m).style.width="150px";
 	document.getElementById("p"+m).style.height="150px";
-	document.getElementById("pf"+m).style.display="block";
-	document.getElementById("t"+m).style.top="85%";
+	document.getElementById("pf"+m).style.display="flex";
+	document.getElementById("t"+m).style.top="183px";
 	var i=0;
 	for (i=0;i<4;i++)
 	{
@@ -24,11 +24,11 @@ function member(m){
 		document.getElementById("p"+i).style.width="100px";
 		document.getElementById("p"+i).style.height="100px";
 		document.getElementById("pf"+i).style.display="none";
-		document.getElementById("t"+i).style.top="75%";
-		//console.log('i='+i);
+		document.getElementById("t"+i).style.top="132px";
+		
 	}
 	bgchanger(m);
-	//console.log('done');
+	
 }
 
 function bgchanger(m){
@@ -36,24 +36,20 @@ function bgchanger(m){
 	{
 		document.getElementById("bgimg").style.backgroundImage="url('../assets/img/cr.jpg')";
 		document.getElementById("pf"+m+"p").style.backgroundImage="url('../assets/img/cr2.jpg')";
-		//document.getElementById("bgimg").style.filter="blur(3px)";
 	}
 	else if(m==1)
 	{
 		document.getElementById("bgimg").style.backgroundImage="url('../assets/img/wt.jpg')";
 		document.getElementById("pf"+m+"p").style.backgroundImage="url('../assets/img/wt2.jpg')";
-		//document.getElementById("bgimg").style.filter="blur(3px)";
 	}
 	else if(m==2)
 	{
 		document.getElementById("bgimg").style.backgroundImage="url('../assets/img/lib.jpg')";
 		document.getElementById("pf"+m+"p").style.backgroundImage="url('../assets/img/lib2.jpg')";
-		//document.getElementById("bgimg").style.filter="blur(3px)";
 	}
 	else if(m==3)
 	{
 		document.getElementById("bgimg").style.backgroundImage="url('../assets/img/hs.jpg')";
 		document.getElementById("pf"+m+"p").style.backgroundImage="url('../assets/img/hs2.jpg')";
-		//document.getElementById("bgimg").style.filter="blur(3px)";
 	}
 }

@@ -1,20 +1,6 @@
-/*
-*{
-	margin:0;
-	padding:0;
-}
-
-body{
-	margin:0 auto;
-	width:100%;
-}
-*/
-
-
 .slider{
 	top:182px;
 	overflow: hidden;
-	/*height:450px;*/
 	width: 1518px;
 	margin-left:50%;	
 	transform: translate(-50%,0);
@@ -40,7 +26,6 @@ img{
 	left: 0;
 	transition: 1s;
 	transition-timing-function: ease;
-	/*animation: slide 20s infinite;*/
 }
 
 figure:hover{
@@ -51,36 +36,6 @@ figure p{
 	display: none;
 }
 
-/*
-@keyframes  slide{
-
-	0%{
-		left: 0px;
-	}
-	25%{
-		left:0px;
-	}
-	30%{
-		left:-600px;
-	}
-	55%{
-		left:-600px;
-	}
-	60%{
-		left:-1200px;
-	}
-	85%{
-		left:-1200px;
-	}
-	90%{
-		left:0px;
-	}
-	100%{
-		left:0px;
-	}
-
-}
-*/
 button{
 	background-color: black;
 	opacity:0.2;

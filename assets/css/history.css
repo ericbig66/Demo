@@ -1,41 +1,113 @@
-
+/*nav下的偽元素箭頭位置*/
 nav::after{
-	left:-46.2%;
+	left:-202px;
 	visibility: visible;
 }
 
-
+/*容器*/
 .people{
-	width: 100%;
-	margin: 0;
+	display: flex;
+	justify-content: center;
+	width: 80%;
 	padding:0;
 	margin:auto;
 	color:white;
 }
 
-
+/*
 .people p{
 	width:50%;
 	position: relative;
-	/*margin:5% auto 5% auto;*/
-}
-
-/*
-.people img{
-	position: relative;
-	display: inline-block;
 }
 */
+
 .insidetitle{
-	margin-bottom: 0;
+	display: flex;
+	margin: auto auto 0 auto;
+	justify-content: center;
+	width:100%;
+	position:relative;
+	overflow: hidden;
+	text-align: center;
+	height: 215px;
+}
+
+.portrait{
+	display: inline-block;
+	background-color: #0000FF;
+	width:100px;
+	height: 100px;
+	border-radius: 50%;
+	border: solid green 2px;
+	margin: 20px 5% 20px 5%;
+	overflow: hidden;
+	vertical-align: middle;
+	cursor: pointer;
+	transition-timing-function: ease;
+	transition: 0.5s;
+}
+
+/*the text of the tooltip*/
+.tooltiptext{
+	opacity: 0;
+	z-index: 1;
+	width:120px;
+	background-color: black;
+	border-radius: 5px;
+	position: absolute;
+	top:183px;
+	margin-left: -65px;
+	color:white;
+	padding:5px;
+	text-align: center;
+	display: inline-block;
+	transition: opacity 0.5s;
+}
+
+/*the arrow above the tooltip */
+.tooltiptext::after{
+	content:"";
+	border:6px;
+	border-style: solid;
+	border-color:transparent transparent black transparent;
+	bottom:100%;
+	position: absolute;
+	left:50%;
+	transform: translate(-50%,0);
+}
+
+/*hover over the round picture to show the tooltip*/
+.portrait:hover{
+	width:150px;
+	height: 150px;
+}
+
+/*zoom effect on hover over the reound picture*/
+.portrait:hover .tooltiptext{
+	top:85%;
+	opacity: 1;
 }
 
 .pictxt{
 	margin: 1% auto 5% auto;
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(0,0,0,0.7);
 	border-radius: 20px;
-	padding:7%;
-	width:80%;
+	display: flex;
+	padding:5%;
+}
+
+
+
+.pictxt div{
+	display: flex;
+	justify-content: center;
+	vertical-align: middle;
+	flex-direction: column;
+	text-align: justify;
+	font-size: 23px;
+	letter-spacing: 5px;
+	color:white;
+	width:50%;
 }
 
 #p0,#p1,#p2,#p3{
@@ -57,22 +129,18 @@ nav::after{
 #p3{
 	background-image: url(../img/hs2.jpg);
 }
-/*
-#pf0p,#pf1p,#pf2p,#pf3p{
-	width:400px;	
-}
-*/
+
 p{
-	font-weight: bold;
+	font-size: 18pt;
+	text-align: justify;
 }
 
 #pf0p,#pf1p,#pf2p,#pf3p{
 	width:400px;
 	height:360px;
-	/*background-image: url(../img/wt2.jpg);*/
 	background-size: cover;
 	border-radius: 20px;
-	margin-right: 11%;
+	margin-right: 50px;
 	display: inline-block;
 }
 
